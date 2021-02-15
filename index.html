@@ -22,7 +22,7 @@
             <span>Fechar</span>
         </div>
 
-        <header>
+        <header id="home">
             <div class="img-wrapper">
                 <img src="/assets/bg.jpg" alt="">
             </div>
@@ -37,10 +37,10 @@
             <nav>
                 <ul class="menu">
                     <li class="menu-item"><a href="" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="" class="menu-link">Conhecimento</a></li>
-                    <li class="menu-item"><a href="" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="" class="menu-link">Contato</a></li>
-                    <li class="menu-item"><a href="" class="menu-link">Orçamento</a></li>
+                    <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
+                    <li class="menu-item"><a href="#projeto" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
+                    <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
                 </ul>
             </nav>
             <div class="social-media">
@@ -51,7 +51,7 @@
         </aside>
 
 
-        <section class="sessao-conhecimentos">
+        <section class="sessao-conhecimentos" id="conhecimentos">
             <div class="sessao-header">
                 <h1>Conhecimentos</h1>
             </div>
@@ -116,7 +116,7 @@
             </div>
         </section>
 
-        <section class="sessao-projetos">
+        <section class="sessao-projetos" id="projeto">
             <div class="sessao-header">
                 <h1>Projetos</h1>
             </div>
@@ -154,7 +154,7 @@
             </div>
         </section>
 
-        <section class="sessao-contato">
+        <section class="sessao-contato" id="contato">
             <div class="contato-wrapper">
                 <div class="contato-left"></div>
                 <div class="contato-right">
@@ -178,7 +178,7 @@
             </div>
         </section>
 
-        <section class="sessao-orcamento">
+        <section class="sessao-orcamento" id="orcamento">
             <div class="orcamento-wrapper">
                 <h1>Faça um orçamento</h1>
                 <form>
@@ -198,25 +198,44 @@
                         </div>
                     </div>
                     <label for="prazo">Prazo</label>
-                    <input type="range" list="marcador" name="prazo" id="prazo">
+                    <input type="range" list="marcador" name="prazo" id="prazo" min="1" max="10">
                     <datalist id="marcador">
                         <option value="0" label="0%">
-                        <option value="10">
-                        <option value="20">
-                        <option value="30">
-                        <option value="40">
-                        <option value="50" label="50%">
-                        <option value="60">
-                        <option value="70">
-                        <option value="80">
-                        <option value="90">
-                        <option value="100" label="100%">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5" label="50%">
+
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10" label="100%">
                       </datalist>
+                    <label id="preco">R$ 0,00</label>
                     <button class="btn btn-orcamento" type="submit">Enviar</button>
                 </form>
             </div>
         </section>
 
+        <footer>
+            <div class="footer-content">
+                <p>
+                    Copyright &copy; 2020 - Todos os direitos reservados
+                </p>
+                <div class="social-list">
+                    <ul>
+                        <li><a href="https://twitter.com/neymarjr"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/neymarjr/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/higor-brandao-a148s7/"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <a href="#home" id="link-topo">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </div>
 </body>
 
